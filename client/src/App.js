@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar"
 import Directory from "./components/Directory"
 import Info from "./components/Info"
 import Search from "./components/Search"
+import Scanlines from "./components/Scanlines"
 import MainImage from "./components/MainImage"
 import API from "./utils/API"
 import './App.css';
@@ -38,8 +39,9 @@ class App extends Component {
   }
 render(){
     return (
-      <div className="container test">
-          <div className="row">
+      <div className="container">
+          <div className="row main">
+          <Scanlines />
               <div className="col col-sm-8 order-sm-2 info-cont" id="display">
                   <div className="row ">
                     <MainImage url={this.state.image}/>

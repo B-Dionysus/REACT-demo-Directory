@@ -13,8 +13,8 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "author": "Paul Cwik",
-  "license": "ISC",
+  "author": "Benjamin Dionysus",
+  "license": "CC",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
