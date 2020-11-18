@@ -1,10 +1,10 @@
  function Directory(props) {
    return (
-    <div className="row">
+    <div className="row dir ">
 
         {
             props.dir.map(elem=>(
-                <h5>{elem.name.title} {elem.name.first} {elem.name.last}</h5>
+                <div key={elem.login.uuid} className="employee-name" onClick={()=>props.loadEmployee(elem)}>{elem.name.title} {elem.name.first} {elem.name.last}</div>
             ))
         }
     </div>

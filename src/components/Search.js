@@ -1,6 +1,6 @@
 function Search() {
     return (
-        <div className="row">
+        <div className="row search">
             Search by:<input />
         </div>
     );

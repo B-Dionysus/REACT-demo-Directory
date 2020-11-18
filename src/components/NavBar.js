@@ -1,6 +1,6 @@
  function NavBar() {
    return (
-     <div className="col">
+     <div className="col nav">
        Nav bar and sort by
      </div> 
    );

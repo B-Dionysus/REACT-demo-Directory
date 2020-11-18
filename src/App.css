@@ -1,3 +1,63 @@
-div{
-  border:1px solid black;
+.nav{
+  width:100%;
+  border:none;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFCC00 ;
+  background:black;
+  border-bottom:1px solid #FFCC00;
+  height:25px;
+}
+.search{
+  border:none;
+  position: relative;
+  top:-.275em;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFCC00 ;
+  background:black;
+  border-top:1px solid #FFCC00;
+  height:25px;
+}
+
+.employee-name{
+  width:100%;
+  border:none;
+  overflow-y:auto;
+  /* font-weight:bold; */
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFBB00 ;
+/* font-family: 'PT Sans', sans-serif; */
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+img{
+  filter:sepia(1);
+  max-height:400px
+}
+.info-cont{
+  background:black;
+}
+.img-cont{
+  
+  height:100px; 
+}
+.dir{
+  
+  height:300px; 
+  overflow-y:auto;
+}
+.dir-cont {
+  background: black;
+}
+.info{
+  width:100%;
+  border:none;
+  overflow-y:auto;
+  font-size: normal;  
+  font-family: 'IBM Plex Mono', monospace;
+  color: #FFBB00 ;
+  background: black;
+  height:100px;
 }
