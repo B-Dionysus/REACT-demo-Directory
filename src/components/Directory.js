@@ -1,7 +1,12 @@
- function Directory() {
+ function Directory(props) {
    return (
     <div className="row">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis incidunt, totam delectus, harum, consequuntur fugit obcaecati maiores rerum voluptate consectetur? Voluptate, similique numquam. Quibusdam dolor veniam accusantium voluptate placeat.
+
+        {
+            props.dir.map(elem=>(
+                <h5>{elem.name.title} {elem.name.first} {elem.name.last}</h5>
+            ))
+        }
     </div>
 
    );
