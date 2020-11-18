@@ -5,19 +5,18 @@
   color: #FFCC00 ;
   background:black;
   border-bottom:1px solid #FFCC00;
-  height:25px;
 }
 .search{
   border:none;
   position: relative;
-  top:-.275em;
   font-family: 'IBM Plex Mono', monospace;
   color: #FFCC00 ;
   background:black;
   border-top:1px solid #FFCC00;
-  height:25px;
 }
-
+.test{
+  height:200px;
+}
 .employee-name{
   width:100%;
   border:none;
@@ -40,13 +39,9 @@ img{
   background:black;
 }
 .img-cont{
-  
-  height:100px; 
 }
 .dir{
-  
-  height:300px; 
-  overflow-y:auto;
+    overflow-y:auto;
 }
 .dir-cont {
   background: black;
@@ -59,5 +54,4 @@ img{
   font-family: 'IBM Plex Mono', monospace;
   color: #FFBB00 ;
   background: black;
-  height:100px;
 }

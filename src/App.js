@@ -38,7 +38,7 @@ class App extends Component {
   }
 render(){
     return (
-      <div className="container">
+      <div className="container test">
           <div className="row">
               <div className="col col-sm-8 order-sm-2 info-cont" id="display">
                   <div className="row ">
