@@ -14,13 +14,13 @@ This app is fully responsive, and was designed with a "mobile-first" approach. I
 * [License](#License)
 * [Questions](#Questions)
 ## Installation Instructions
-In the same directory as package.json, type ```npm install```
+In the same directory as package.json, type ```npm run```
 ## Live URL
-https://still-garden-84796.herokuapp.com/ 
+https://radiant-headland-03044.herokuapp.com/
 ## How to Contribute
 No contributions are being accepted at this time.
 ## Exciting Trivia
-The background graphic for this page was inspired by my TA for this course, who very kindly walked me through the logic / flow of it all this morning, when I was entirely at sea. Thank you, Paul!
+I am not entirely sure, but I think that at least some of this nostalgic aesthetic is due to the fact that I recently played a lot of Super Hot, which uses a similar early-90s look for its menus and meta-game. I never had an amber monitor myself--all of mine were P1 phosphor green--but I remember using the computer in my father's office to play games, and it had that lovely golden hue. don't get me wrong, I'm still quite nostalgic for the green monochrom, as well! But that can be a bit over-used.
 ## Screenshot
 ![screnshot](./client/public/screenshot.PNG)
 ## License

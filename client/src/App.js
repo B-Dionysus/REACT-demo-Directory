@@ -27,6 +27,10 @@ class App extends Component {
       this.setState({originalDir:res.data.results});
       this.setState({displayDir:res.data.results});
       this.loadEmployee(res.data.results[0])
+    })
+    .catch(err=>{
+      console.log(err);
+      this.loadDir();
     });
   }
   loadEmployee=data=>{
