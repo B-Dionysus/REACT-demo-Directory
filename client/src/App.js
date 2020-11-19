@@ -80,14 +80,14 @@ render(){
       <div className="container">
           <div className="row main">
           <Scanlines />
-              <div className="col col-sm-8 order-sm-2 info-cont" id="display">
+              <div className="col-12 col-md-9 order-md-2 info-cont" id="display">
                   <div className="row ">
                     <MainImage url={this.state.image}/>
                     <Info info={this.state.info}/>
                   </div>
                     <Search  searchHandler={this.searchHandler}/>
               </div>
-              <div className="col col-sm-4 order-sm-1 dir-cont" id="directory">
+              <div className="col-12 col-md-3 order-md-1 dir-cont" id="directory">
                   <div className="row">
                       <NavBar ageSort={()=>this.sortDir("age")} firstSort={()=>this.sortDir("first")} lastSort={()=>this.sortDir("last")}/>                   
                   </div>

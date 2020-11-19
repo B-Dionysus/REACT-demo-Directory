@@ -10,7 +10,7 @@ function MainImage(props) {
       };
     //   {backgroundImage:`url(${props.url})`, width:"100%" }
     return (
-        <div className="col col-xl-8 col-lg-12 img-cont">
+        <div className="col-12 col-md-7  col-sm-12 img-cont">
             {/* <img width="100%" src={props.url} alt="placeholder" /> */}
             <div style={imageStyle}/>
         </div>

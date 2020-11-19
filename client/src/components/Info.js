@@ -1,7 +1,7 @@
 function Info(props) {
   if(props.info.name){
     return (
-      <div className="col col-lg-4 info-cont">
+      <div className="col-12 col-md-5 col-sm-12 info-cont">
         <div className="info" id="nameInfo">{props.info.name.title} {props.info.name.first} {props.info.name.last}</div>
         <div className="info" id="countryInfo">Username:{props.info.login.username}</div>
         <div className="info" id="countryInfo">{props.info.dob.age} yrs old</div>

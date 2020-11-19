@@ -2,13 +2,19 @@
 .main{
   position: relative;
 }
-.nav{
+.navCont{
   width:100%;
   border:none;
   font-family: 'IBM Plex Mono', monospace;
   color: #FFCC00 ;
   background:black;
   border-bottom:1px solid #FFCC00;
+  padding-left:1em;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 .search{
   border:none;
@@ -38,7 +44,8 @@
 
 img{
   filter:sepia(1);
-  max-height:400px
+  max-height:400px;
+  opacity: 50%;
 }
 .info-cont{
   background:black;
@@ -49,9 +56,11 @@ img{
 .dir{
     overflow-y:auto;
     max-height:400px;
+    padding:1em;
 }
 .dir-cont {
   background: black;
+  padding:1em;
 }
 .info{
   width:100%;
@@ -59,7 +68,7 @@ img{
   overflow-y:auto;
   font-size: normal;  
   font-family: 'IBM Plex Mono', monospace;
-  color: #FFBB00 ;
+  color: #FFBB00;
   background: black;
 }
 .scanlines{
@@ -78,6 +87,10 @@ img{
   border-bottom: 1px solid black;
   height: 4px;
   opacity: .65;
-
+}
+#searchInput{
+  background: #775c12;
+  color:black;
+  font-weight:bold;
 
 }
