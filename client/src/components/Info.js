@@ -2,10 +2,12 @@ function Info(props) {
   if(props.info.name){
     return (
       <div className="col col-lg-4 info-cont">
-          <div className="info" id="nameInfo">{props.info.name.title} {props.info.name.first} {props.info.name.last}</div>
-          <div className="info" id="cellInfo">Cell: {props.info.cell}</div>
-          <div className="info" id="emailInfo">Email: {props.info.email}</div>
-          <div className="info" id="countryInfo">{props.info.location.country}</div>
+        <div className="info" id="nameInfo">{props.info.name.title} {props.info.name.first} {props.info.name.last}</div>
+        <div className="info" id="countryInfo">Username:{props.info.login.username}</div>
+        <div className="info" id="countryInfo">{props.info.dob.age} yrs old</div>
+        <div className="info" id="cellInfo">Cell: {props.info.cell}</div>
+        <div className="info" id="emailInfo">Email: {props.info.email}</div>
+        <div className="info" id="countryInfo">{props.info.location.country}</div>
       </div>
 
     );

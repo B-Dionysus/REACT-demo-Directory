@@ -52,6 +52,29 @@ class App extends Component {
     })
     this.setState({displayDir:newDir})
   }
+  sortDir=cat=>{
+    let newDir=this.state.displayDir;
+    newDir=newDir.sort((a, b)=>{
+      switch(cat){
+        case "age":
+          return a.dob.age-b.dob.age;
+          break;
+        case "first":
+          if(a.name.first.toLowerCase()>b.name.first.toLowerCase()) return 1;
+          else return -1;
+          break;
+        case "last":
+          if(a.name.last.toLowerCase()>b.name.last.toLowerCase()) return 1;
+          else return -1;
+          break;
+        default:
+          return 1;
+      }
+    })
+    this.setState({displayDir:newDir})
+  }
+
+
 render(){
     return (
       <div className="container">
@@ -66,7 +89,7 @@ render(){
               </div>
               <div className="col col-sm-4 order-sm-1 dir-cont" id="directory">
                   <div className="row">
-                      <NavBar />                   
+                      <NavBar ageSort={()=>this.sortDir("age")} firstSort={()=>this.sortDir("first")} lastSort={()=>this.sortDir("last")}/>                   
                   </div>
                     <Directory dir={this.state.displayDir} loadEmployee={this.loadEmployee}/>
               </div>

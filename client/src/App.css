@@ -1,3 +1,4 @@
+
 .main{
   position: relative;
 }
@@ -47,7 +48,7 @@ img{
 }
 .dir{
     overflow-y:auto;
-    height:400px;
+    max-height:400px;
 }
 .dir-cont {
   background: black;
