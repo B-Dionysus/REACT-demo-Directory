@@ -18,7 +18,7 @@ function Info(props) {
 }
 
 export default Info;
-
+// Here's the other data (all fictional and random, of course) that we could be displaying:
 // cell: "075 290 70 93"
 // dob: {date: "1987-09-03T01:48:34.261Z", age: 33}
 // email: "kilian.rey@example.com"
