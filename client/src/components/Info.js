@@ -1,14 +1,11 @@
 function Info(props) {
-  console.log(props.info);
   if(props.info.name){
     return (
       <div className="col col-lg-4 info-cont">
-        <ul>
-          <li className="info" id="nameInfo">{props.info.name.title} {props.info.name.first} {props.info.name.last}</li>
-          <li className="info" id="cellInfo">Cell: {props.info.cell}</li>
-          <li className="info" id="emailInfo">Email: {props.info.email}</li>
-          <li className="info" id="countryInfo">{props.info.location.country}</li>
-        </ul>
+          <div className="info" id="nameInfo">{props.info.name.title} {props.info.name.first} {props.info.name.last}</div>
+          <div className="info" id="cellInfo">Cell: {props.info.cell}</div>
+          <div className="info" id="emailInfo">Email: {props.info.email}</div>
+          <div className="info" id="countryInfo">{props.info.location.country}</div>
       </div>
 
     );

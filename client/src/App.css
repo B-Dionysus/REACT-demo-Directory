@@ -24,10 +24,11 @@
   width:100%;
   border:none;
   overflow-y:auto;
-  /* font-weight:bold; */
   font-family: 'IBM Plex Mono', monospace;
   color: #FFBB00 ;
-/* font-family: 'PT Sans', sans-serif; */
+  background:black;
+  text-align: left;
+  cursor:pointer;
 }
 ::-webkit-scrollbar {
   width: 0px;  /* Remove scrollbar space */
@@ -42,9 +43,11 @@ img{
   background:black;
 }
 .img-cont{
+  height:400px;
 }
 .dir{
     overflow-y:auto;
+    height:400px;
 }
 .dir-cont {
   background: black;
@@ -67,6 +70,8 @@ img{
   height:100%;
   border:1px dotted black;
   overflow:hidden;
+  pointer-events: none;
+
 }
 .sline{
   border-bottom: 1px solid black;

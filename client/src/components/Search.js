@@ -1,7 +1,7 @@
-function Search() {
+function Search(props) {
     return (
         <div className="row search">
-            Search by:<input />
+            Search by:<input onChange={props.searchHandler}/>
         </div>
     );
   }

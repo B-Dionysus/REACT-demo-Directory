@@ -11,7 +11,8 @@ import { Component } from "react"
 
 class App extends Component {
   state={
-    dir:[],
+    originalDir:[],
+    displayDir:[],
     image:"https://via.placeholder.com/150",
     info:{}
   };
@@ -23,7 +24,8 @@ class App extends Component {
   loadDir=()=>{
     API.getAllUsers(30)
     .then(res=>{
-      this.setState({dir:res.data.results});
+      this.setState({originalDir:res.data.results});
+      this.setState({displayDir:res.data.results});
       this.loadEmployee(res.data.results[0])
     });
   }
@@ -37,6 +39,19 @@ class App extends Component {
   handleImage=(url)=>{
     this.setState({image:url});
   }
+  searchHandler=e=>{
+    let newDir=this.state.originalDir;
+    let needle=e.target.value;
+    
+    newDir=newDir.filter((elem)=>{
+      if(elem.name.first.substring(0,needle.length).toLowerCase()===needle)
+        return true;
+      else if(elem.name.last.substring(0,needle.length).toLowerCase()===needle)  
+        return true;
+      else return false;
+    })
+    this.setState({displayDir:newDir})
+  }
 render(){
     return (
       <div className="container">
@@ -47,13 +62,13 @@ render(){
                     <MainImage url={this.state.image}/>
                     <Info info={this.state.info}/>
                   </div>
-                    <Search />
+                    <Search  searchHandler={this.searchHandler}/>
               </div>
               <div className="col col-sm-4 order-sm-1 dir-cont" id="directory">
                   <div className="row">
                       <NavBar />                   
                   </div>
-                    <Directory dir={this.state.dir} loadEmployee={this.loadEmployee}/>
+                    <Directory dir={this.state.displayDir} loadEmployee={this.loadEmployee}/>
               </div>
           </div>
       </div>
