@@ -16,7 +16,8 @@ class App extends Component {
     image:"https://via.placeholder.com/150",
     info:{}
   };
-  
+  // This first thing to do once the component is up and running it to load the first
+  // employee
   componentDidMount(){
     this.loadDir();
   }
